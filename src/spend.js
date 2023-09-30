@@ -31,10 +31,15 @@ function spend(toSpend, transactions) {
         }
 
         // Add amount spent to receipt
-        receipt.push({
-            payer: current.payer,
-            points: spent,
-        });
+        if (receipt.some((entry) => entry.payer == current.payer)) {
+            receipt.find((entry) => entry.payer == current.payer)
+                .points += spent;
+        } else {
+            receipt.push({
+                payer: current.payer,
+                points: spent,
+            });
+        }
     }
 
     // Decrement total
