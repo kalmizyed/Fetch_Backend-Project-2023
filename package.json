@@ -1,0 +1,21 @@
+{
+  "name": "backend-challenge",
+  "version": "1.0.0",
+  "description": "A simple REST api to add, spend, and check the balance of a user's points.",
+  "main": "src/backend.js",
+  "scripts": {
+    "start": "node src/backend.js",
+    "dev": "nodemon src/backend.js",
+    "lint": "eslint ."
+  },
+  "author": "Kaden Almizyed",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^3.0.1"
+  }
+}
