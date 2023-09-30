@@ -1,0 +1,42 @@
+1.  I chose to use JavaScript and Node.js for this exercise since they're what
+    I've used for similar backend projects in the past, so I'm more comfortable
+    using them to write up a quick prototype like this.  Plus, they're both
+    pretty widely-used, so they were also appealing from a code understandability
+    standpoint.  I used the Express library to handle HTTP requests for the same
+    reasons.  As far as tools like nodemon and ESLint are concerned, I used them
+    mainly for ease of life while debugging and finalizing my code.
+
+2.  One advantage of my solution is that it makes all the transaction data
+    portable by storing all transactions, their point total, and a getter
+    function in one variable, simplifying access when passing between functions.
+    That portability allowed me to more easily modularize my code and abstract
+    away some of the process, making the program much more readable.
+    A major disadvantage to my solution is that it assumes the passed-in data
+    is gonna be formatted correctly.  Since it doesn't validate any of its
+    arguments, it leaves room for plenty of breaking errors.  Along with that,
+    there are issues I would've liked to consult with a peer on, such as what to
+    do in cases where negative points are added with /add.  Since I couldn't, I
+    decided to take the least intrusive approach and continue to store negative
+    transactions like I would with positive ones, rather than calling spend()
+    from within the /add endpoint.
+
+3.  My favorite project so far has probably been my MadHacks project from last
+    spring: a small, 2D browser game called Robug.  I'm somewhat interested in
+    game dev, so the project was a fun way to dip my toes into that field while
+    still creating a web project.  I mostly worked on the backend game logic,
+    but I also helped and consulted with the other two on my team with their
+    respective jobs.  One challenge that presented itself while I worked was my
+    inability to test a lot of what I was working on without a functioning
+    frontend to display the game and a functioning backend to send the game
+    state to the frontend.  I ended up working around this by putting together
+    an extremely simple test frontend to have some way to visualize the game
+    logic.  Another challenge unique to that project for me was that I had to
+    work together for the first time on a group project with no pre-existing
+    structure or requirements.  To alleviate this, we started with an idea of 
+    how the frontend, backend, and game logic would interface and worked hard to
+    communicate any changes we made that would affect the others.  Normally, I
+    don't think that would be too challenging, but when working within a 24 hour
+    timeframe it definitely felt like it!  A lot of the time, we were laser-
+    focused on our own code, so it definitely took some discipline to slow down
+    and communicate every once in a while.  That all said, I'm excited to
+    participate again this November!
